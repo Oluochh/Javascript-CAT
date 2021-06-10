@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="Quiz">        
+        <form>
+            <label for="name">Student's Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="class">Enter class:</label><br>
+            <input type="text" id="class" name="class"><br>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br>
+                <label for=" date">Date:</label><br>
+                <input type="date" id="date" name="date"><br>
+                <input type="button" onclick="quizResponses()" value="Submit">
+            </form>
+      </div>
+   <script>
+ function quizResponses(){
+      var name=document.getElementById("name").value;
+      var  className=document.getElementById("class").value;
+      var subject=document.getElementById("subject").value;
+      var date=document.getElementById("date").value;
+      if(name ==="" || className===""||subject===""||date===""){
+          alert("you have to fill out all the fields!")
+      }
+      else{
+        alert(` You have submitted the following responses:  name:${name} , className:${className}, subject:${subject} , on this date${date}`)
+
+      }
+  } 
+   </script> 
+</body>
+<br>
+
+
+
+
+
+Question2:
+How can you create an object in JavaScript?<br>
+
+Objects in javascript in a collection are known as properties and can be created by passing or giving it a key and a value,in which there are different types of creating objects i.e <br>
+<li>
+    Using the constructor or new method to create new items.
+    using the Object-create where one can add items in the existing object.
+    Using Classes.
+</li>
+Question3:
+ What are the scopes of a variable in JavaScript?<br>
+ <li>
+ Global variable:A global variable can be accesed anywhere  by javascript code. <br>
+</li>
+<li>
+ Local variable:A local variable can only be accesed within the function that has been defined.
+ </li>
+
+ Question4:
+ 
+ 
+
+
+
+
+
+
+
+
+
+    
